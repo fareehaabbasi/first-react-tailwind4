@@ -48,6 +48,41 @@ function App () {
     "age": 26,
     "profession": "UI/UX Designer",
     "profilePhoto": "https://randomuser.me/api/portraits/women/51.jpg"
+  },
+  {
+    "name": "Hamza Ali",
+    "city": "Hyderabad",
+    "age": 27,
+    "profession": "Mobile App Developer",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/12.jpg"
+  },
+  {
+    "name": "Mariam Iqbal",
+    "city": "Peshawar",
+    "age": 25,
+    "profession": "Digital Marketer",
+    "profilePhoto": "https://randomuser.me/api/portraits/women/15.jpg"
+  },
+  {
+    "name": "Usman Tariq",
+    "city": "Quetta",
+    "age": 32,
+    "profession": "Data Scientist",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/45.jpg"
+  },
+  {
+    "name": "Zara Sheikh",
+    "city": "Sialkot",
+    "age": 21,
+    "profession": "Student",
+    "profilePhoto": "https://randomuser.me/api/portraits/women/33.jpg"
+  },
+  {
+    "name": "Omar Farooq",
+    "city": "Rawalpindi",
+    "age": 29,
+    "profession": "Project Manager",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/59.jpg"
   }
 ]
 

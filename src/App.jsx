@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Cards from "./components/Cards";
 import axios from "axios";
@@ -134,18 +134,24 @@ function App() {
     const response = await axios.get("https://picsum.photos/v2/list?page=2&limit=40");
     const data = response.data;
     setData(data);
-    console.log(data);  
+    console.log(data);
   };
+
+  useEffect(() => {
+    getData();
+  })
 
   return (
     <>
-    <button onClick={getData} className="bg-indigo-950 text-white py-2 px-4 rounded active:scale-90 m-4">Get Data</button>
-    <div className="p-5 bg-neutral-800 flex items-center justify-center flex-wrap min-h-screen">
+        <div className="p-5 bg-neutral-800 flex items-center justify-center flex-wrap min-h-screen">
       {data.map ((elem, idx) => {
-        return <div className="bg-lime-300 text-black px-7 py-6 rounded mb-3 mr-2.5" key={idx}>
-          <h1 className="text-lg font-bold">{elem.author}</h1>
-          <img className="w-50 h-40" src={elem.download_url} alt="" />
-        </div>
+        return (
+        // <div className="bg-lime-300 text-black px-7 py-6 rounded mb-3 mr-2.5" >
+        //   <h1 className="text-lg font-bold">{props.author}</h1>
+        //   <img className="w-50 h-40" src={props.img} alt="" />
+        // </div> 
+        <Cards key={idx} author={elem.author} img={elem.download_url}/>
+        )
      })}
     </div>
     </>
